@@ -112,7 +112,9 @@ export default function Calendar() {
           <VscChevronRight />
         </button>
       </div>
-      <div className="flex flex-col overflow-hidden gap-1 py-4 font-mono italic">
+      <div
+        className={`flex flex-col overflow-hidden gap-1 py-4 italic ${fugaz_One.className}`}
+      >
         {[...Array(numRows).keys()].map((row, rowIndex) => (
           <div key={rowIndex} className="grid grid-cols-7 gap-1">
             {dayList.map((dayOfWeek, dayOfWeekIndex) => {
